@@ -148,13 +148,13 @@ sml.Script = function (text) {
 		output.push('\n' + sml.Repeat('\t', level) + code);
 	};
 	let script = function (code) {
-		'"' + code + '"';
+		return '"' + code + '"';
 	};
 
 	//var result = eval(Babel.transform(code, {presets: ['es2015']}).code);
 
 	let result = eval(code);
-	if (result == undefined)
+	i   f (result == undefined)
 		result = '';
 	return text.replace(match[0], result + output.join(''));
 };

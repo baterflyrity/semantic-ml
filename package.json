@@ -12,17 +12,27 @@
 	"ml",
 	"sml"
   ],
+  "homepage": "https://github.com/baterflyrity/semantic-ml",
+  "bugs": {
+	"url": "https://github.com/baterflyrity/semantic-ml/issues",
+	"email": "baterflyrity@yandex.ru"
+  },
+  "license": "GPL-3.0-only",
+  "author": {
+	"name": "baterflyrity",
+	"email": "baterflyrity@yandex.ru"
+  },
   "main": "semantic-ml.js",
   "directories": {
 	"doc": ".",
 	"test": "test",
-	"example": "examples"
+	"example": "examples",
+	"lib": "."
   },
+  "repository": "github:baterflyrity/semantic-ml",
   "scripts": {
 	"test": "mocha test/test.js"
   },
-  "author": "baterflyrity",
-  "license": "ISC",
   "devDependencies": {
 	"assert": "^1.4.1",
 	"html-minifier": "^3.5.19",

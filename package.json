@@ -1,0 +1,31 @@
+{
+  "name": "semantic-ml",
+  "version": "1.0.0",
+  "description": "Semantic UI Markup Language (SML) Compiler",
+  "keywords": [
+	"semantic",
+	"ui",
+	"markup",
+	"language",
+	"preprocessor",
+	"html",
+	"ml",
+	"sml"
+  ],
+  "main": "semantic-ml.js",
+  "directories": {
+	"doc": ".",
+	"test": "test",
+	"example": "examples"
+  },
+  "scripts": {
+	"test": "mocha test/test.js"
+  },
+  "author": "baterflyrity",
+  "license": "ISC",
+  "devDependencies": {
+	"assert": "^1.4.1",
+	"html-minifier": "^3.5.19",
+	"mocha": "^5.2.0"
+  }
+}

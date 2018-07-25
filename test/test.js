@@ -5,8 +5,8 @@ const sml = require("../semantic-ml"),
 	minify = require('html-minifier').minify;
 
 it("Example", function () {
-	let origin = '' + fs.readFileSync('test/example.html'),
-		source = '' + fs.readFileSync('test/example.sml');
+	let origin = '' + fs.readFileSync('examples/login.html'),
+		source = '' + fs.readFileSync('examples/login.sml');
 	let options = {
 		collapseInlineTagWhitespace: true,
 		collapseWhitespace: true,
@@ -15,7 +15,6 @@ it("Example", function () {
 		quoteCharacter: '"',
 		removeComments: true
 	};
-	//Minify both HTML to obtain equal structure.
 	assert.equal(minify(sml(source), options), minify(origin, options), 'Compiled HTML does not equal to the original one.');
 });
 

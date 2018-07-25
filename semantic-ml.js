@@ -150,11 +150,8 @@ sml.Script = function (text) {
 	let script = function (code) {
 		return '"' + code + '"';
 	};
-
-	//var result = eval(Babel.transform(code, {presets: ['es2015']}).code);
-
 	let result = eval(code);
-	i   f (result == undefined)
+	if (result == undefined)
 		result = '';
 	return text.replace(match[0], result + output.join(''));
 };

@@ -5,7 +5,7 @@ const sml = require("../semantic-ml"),
 	minify = require('html-minifier').minify;
 
 it("Example", function () {
-	let origin = '' + fs.readFileSync('examples/login.html'),
+	let origin = '' + fs.readFileSync('examples/login.origin.html'),
 		source = '' + fs.readFileSync('examples/login.sml');
 	let options = {
 		collapseInlineTagWhitespace: true,
